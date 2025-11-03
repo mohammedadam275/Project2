@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giphy Search Engine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <button id="logo-btn" aria-label="Home">
+            <h1>Giphy Search</h1>
+        </button>
+        <nav>
+            <a href="#" class="navbtn" id="nav-home">Home</a>
+            <a href="#" class="navbtn" id="nav-random">Random</a>
+            <a href="#" class="navbtn" id="nav-contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+ <!-- Home View -->
+        <section id="view-home">
+            <h2>Search for GIFs</h2>
+            <form id="search-form">
+                <input type="search" id="search-input" placeholder="Search for gifs...">
+                <button type="submit" id="search-btn">Search</button>
+            </form>
+            <div id="home-results" class="flex-grid">
+                <!-- GIFs will appear here via JavaScript -->
+            </div>
+        </section>
+
+          <!-- Random View -->
+        <section id="view-random" class="hidden">
+            <h2>Random GIFs</h2>
+            <div id="random-results" class="flex-grid">
+                <!-- Random GIFs will appear here via JavaScript -->
+            </div>
+        </section>
+
+        <!--Contact View-->
+        <section id = "view-contact" class = "hidden">
+            <h2> Contact Us </h2>
+            <form id = "contact-form">
+                <input type = "text" id="contact-name" placeholder="Your name" required>
+                <input type = "email" id="contact-email" placeholder="Your Email" required>
+                <textarea id="contact-reason" placeholder="Why are you contacting us?" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+                <div id="contact-feedback"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
